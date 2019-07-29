@@ -2,7 +2,7 @@
     <head>
         <title>Test</title>
         <script>
-        fetch("./simple.wasm").then(function(response) {
+        fetch("./a.out.wasm").then(function(response) {
             return response.arrayBuffer();
             }).then(function(bytes) {
                 return WebAssembly.compile(bytes);
